@@ -1,3 +1,6 @@
+// ignore_for_file: prefer_const_constructors, avoid_print, sized_box_for_whitespace
+
+import 'package:basicflutter/screens/forgot.dart';
 import 'package:basicflutter/screens/my_service.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -38,6 +41,7 @@ class _AuthenState extends State<Authen> {
             showAppName(),
             emailText(),
             passwordText(),
+            forgotPassword(),
           ],
         ),
       ),
@@ -179,6 +183,17 @@ class _AuthenState extends State<Authen> {
             actions: [okButton()],
           );
         });
+  }
+
+  Widget forgotPassword() {
+    return TextButton(
+      onPressed: () {
+        MaterialPageRoute materialPageRoute = MaterialPageRoute(
+            builder: (BuildContext context) => const Forgot());
+        Navigator.of(context).push(materialPageRoute);
+      },
+      child: Text("forgot password"),
+    );
   }
 
   @override

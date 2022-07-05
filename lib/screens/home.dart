@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, avoid_print
+
 import 'package:basicflutter/screens/authen.dart';
 import 'package:basicflutter/screens/my_service.dart';
 import 'package:basicflutter/screens/register.dart';
@@ -15,7 +17,6 @@ class _HomeState extends State<Home> {
   // Method
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     checkStatus();
   }

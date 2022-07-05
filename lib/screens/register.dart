@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_print
+// ignore_for_file: avoid_print, prefer_const_constructors
 
 import 'package:basicflutter/screens/my_service.dart';
 import 'package:flutter/material.dart';
@@ -53,14 +53,14 @@ class _RegisterState extends State<Register> {
   }
 
   // ติดค่า null ใช้ไม่ได้
-
+  //
   // Future<void> setupDisplayName() async {
   //   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   //   await firebaseAuth.currentUser().then((response) {
   //     UserUpdateInfo userUpdateInfo = UserUpdateInfo();
   //     userUpdateInfo.displayName = nameString;
   //     response.updateProfile(userUpdateInfo);
-
+  //
   //     MaterialPageRoute materialPageRoute =
   //         MaterialPageRoute(builder: (BuildContext context) => MyService());
   //     Navigator.of(context).pushAndRemoveUntil(
